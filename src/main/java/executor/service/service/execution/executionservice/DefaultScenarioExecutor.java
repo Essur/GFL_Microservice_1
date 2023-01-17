@@ -51,6 +51,8 @@ public class DefaultScenarioExecutor implements ScenarioExecutor {
                     sleep.step(webDriver, step);
                 }
             }
+        } catch (Exception ignored) {
+
         } finally {
             webDriver.quit();
         }
